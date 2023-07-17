@@ -60,7 +60,7 @@ export default {
     async submit() {
       console.log({num1: this.param.num1, num2: this.param.num2});
       console.log('submit completed');
-      const response = await fetch('http://127.0.0.1:8000/api/add/', {
+      const response = await fetch('https://classify-backend.onrender.com/api/add/', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(this.param)
@@ -79,7 +79,7 @@ export default {
       formData.append('file', this.file)
       formData.append('type', this.file.type)
 
-      const response = await fetch('http://127.0.0.1:8000/api/predict/', {
+      const response = await fetch('https://classify-backend.onrender.com/api/predict/', {
         method: 'POST',
         body: formData
       })
