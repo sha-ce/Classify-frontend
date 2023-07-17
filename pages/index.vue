@@ -148,13 +148,26 @@ export default {
   width: 512px;
   height: 512px;
 }
+.imgsPreview .imageHolder[data-v-44324f62] {
+  width: 512px;
+  height: 512px;
+}
 .container[data-v-69bb59a3] {
   width: 550px;
   height: 500px;
   background: #2e2e2e;
   padding: 50px;
 }
+.container[data-v-44324f62] {
+  width: 550px;
+  height: 500px;
+  background: #2e2e2e;
+  padding: 50px;
+}
 .drop[data-v-69bb59a3] {
+  background-color: #2e2e2e;
+}
+.drop[data-v-44324f62] {
   background-color: #2e2e2e;
 }
 .container {
@@ -191,7 +204,31 @@ export default {
   right: -42px;
   bottom: 43%;
 }
+.imgsPreview .imageHolder .plus[data-v-44324f62] {
+  color: #e0e0e0ea;
+  background: #2e2e2e;
+  border-radius: 50%;
+  font-size: 21pt;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: 1px dashed;
+  line-height: 28px;
+  position: absolute;
+  right: -42px;
+  bottom: 43%;
+}
 .imgsPreview .imageHolder .delete[data-v-69bb59a3] {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 29px;
+  height: 29px;
+  color: #fff;
+  background: none;
+  border-radius: 50%;
+}
+.imgsPreview .imageHolder .delete[data-v-44324f62] {
   position: absolute;
   top: 4px;
   right: 4px;
@@ -210,7 +247,22 @@ export default {
   border: none;
   cursor: pointer;
 }
+.clearButton[data-v-44324f62] {
+  color: #e0e0e0ea;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 .beforeUpload .icon[data-v-69bb59a3] {
+  width: 150px;
+  margin: auto;
+  display: block;
+  margin-top: 150px;
+}
+.beforeUpload .icon[data-v-44324f62] {
   width: 150px;
   margin: auto;
   display: block;
