@@ -132,14 +132,6 @@ export default {
   border: 1px solid #e0e0e0ea;
   color: #e0e0e0ea;
 }
-.imgsPreview .imageHolder[data-v-69bb59a3] {
-  width: 512px;
-  height: 512px;
-}
-.imgsPreview .imageHolder[data-v-44324f62] {
-  width: 512px;
-  height: 512px;
-}
 .container[data-v-69bb59a3] {
   width: min(550px, 70vw);
   height: min(550px, 50vw);
@@ -278,6 +270,14 @@ export default {
   .beforeUpload .icon[data-v-44324f62] {
     margin-top: 150px;
   }
+  .imgsPreview .imageHolder[data-v-69bb59a3] {
+    width: 512px;
+    height: 512px;
+  }
+  .imgsPreview .imageHolder[data-v-44324f62] {
+    width: 512px;
+    height: 512px;
+  }
 }
 @media screen and (max-width: 700px) {
   .from {
@@ -305,6 +305,14 @@ export default {
   }
   .beforeUpload .icon[data-v-44324f62] {
     margin-top: 20px;
+  }
+  .imgsPreview .imageHolder[data-v-69bb59a3] {
+    width: 55vw;
+    height: 55vw;
+  }
+  .imgsPreview .imageHolder[data-v-44324f62] {
+    width: 55vw;
+    height: 55vw;
   }
 }
 html, body {
