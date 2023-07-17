@@ -105,7 +105,7 @@ export default {
 }
 .text {
   margin: 0 auto;
-  padding: 20px 25%;
+  padding: 20px min(300px, 5vw);
 }
 .calc {
   width: 40%;
@@ -116,18 +116,6 @@ export default {
   align-items: center;
   border: 2px solid #e0e0e0ea;
   border-radius: 20px;
-}
-.button {
-  display: block;
-  margin: 10px auto;
-  padding: 30px 80px;
-  color: #e0e0e0ea;
-  background-color: #444444;
-  border: none;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 120px;
-  font-size: 1.1rem;
 }
 .button:hover {
   cursor: pointer;
@@ -153,14 +141,14 @@ export default {
   height: 512px;
 }
 .container[data-v-69bb59a3] {
-  width: 550px;
-  height: 500px;
+  width: min(550px, 70vw);
+  height: min(550px, 50vw);
   background: #2e2e2e;
   padding: 50px;
 }
 .container[data-v-44324f62] {
-  width: 550px;
-  height: 500px;
+  width: min(550px, 70vw);
+  height: min(550px, 50vw);
   background: #2e2e2e;
   padding: 50px;
 }
@@ -180,12 +168,6 @@ export default {
   color: #e0e0e0ea;
   justify-content: center;
   display: flex;
-}
-.form-right {
-  width: 200px;
-  margin: 10px auto;
-  padding: 30px;
-  float: left;
 }
 .result {
   display: flex;
@@ -257,19 +239,73 @@ export default {
   cursor: pointer;
 }
 .beforeUpload .icon[data-v-69bb59a3] {
-  width: 150px;
+  width: min(150px, 30vw);
   margin: auto;
   display: block;
-  margin-top: 150px;
+  font-size: 0.8rem;
 }
 .beforeUpload .icon[data-v-44324f62] {
-  width: 150px;
+  width: min(150px, 30vw);
   margin: auto;
   display: block;
-  margin-top: 150px;
+  font-size: 0.8rem;
 }
-.form {
-  display: inline-flex;
+@media screen and (min-width: 701px) {
+  .form {
+    display: inline-flex;
+  }
+  .form-right {
+    width: 200px;
+    margin: 10px auto;
+    padding: 30px;
+    float: left;
+  }
+  .button {
+    display: block;
+    margin: 10px auto;
+    padding: 30px 80px;
+    color: #e0e0e0ea;
+    background-color: #444444;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    bottom: -300px;
+    font-size: 1.1rem;
+  }
+  .beforeUpload .icon[data-v-69bb59a3] {
+    margin-top: 150px;
+  }
+  .beforeUpload .icon[data-v-44324f62] {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .from {
+    display: block;
+  }
+  .form-right {
+    width: 100%;
+  }
+  .button {
+    display: block;
+    margin: 10px auto;
+    padding: 30px 80px;
+    color: #e0e0e0ea;
+    background-color: #444444;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    width: 80vw;
+  }
+  .beforeUpload p {
+    font-size: 0.6rem;
+  }
+  .beforeUpload .icon[data-v-69bb59a3] {
+    margin-top: 20px;
+  }
+  .beforeUpload .icon[data-v-44324f62] {
+    margin-top: 20px;
+  }
 }
 html, body {
   margin: 0;
